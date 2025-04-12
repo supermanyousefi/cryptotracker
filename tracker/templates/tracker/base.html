@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% load static %}
     <title>{% block title %}CryptoTracker{% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "tracker/css/style.css" %}">
 </head>
 <body>
     <header>
