@@ -11,7 +11,9 @@ class Currency(models.Model):
     type    = models.CharField(max_length=10,choices=CurrencyType.choices)
     symbol  = models.CharField(max_length=10,blank=True,null=True) # $ or ₿ but it's optional.
     created_at = models.DateTimeField(auto_now_add=True)
-
+    class Meta:
+        verbose_name_plural = 'Currencies'
+    
     def __str__(self):
         return f"{self.name} ({self.code})"
 
