@@ -11,6 +11,7 @@ class Currency(models.Model):
     type    = models.CharField(max_length=10,choices=CurrencyType.choices)
     symbol  = models.CharField(max_length=10,blank=True,null=True) # $ or ₿ but it's optional.
     created_at = models.DateTimeField(auto_now_add=True)
+    coingecko_id = models.CharField( max_length=100,blank = True,null = True,unique = True)
     class Meta:
         verbose_name_plural = 'Currencies'
     
