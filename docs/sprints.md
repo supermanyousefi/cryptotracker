@@ -12,3 +12,4 @@
     CoinGecko is used.
 - [x] Step 2: Write Fetch Utility
 - [x] Step 3: Build Service to Save Prices to Database and populate Currency model.
+- [x] Step 4: Schedule Automatic Fetching of Prices
